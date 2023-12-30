@@ -1,0 +1,13 @@
+
+sudo su
+su: failed to execute zsh: No such file or directory
+
+Solve the problem of logging in with root privileges using the sudo su command
+The first thing you must open the terminal again and type sudo apt install update && install upgrade
+If the problem is not resolved, type sudo nano /etc/passwd. 
+Attention, you must type sudo in order to be able to save the modifications
+Search for root:x:0:0:root:/root: it will look like root:x:0:0:root:/root:zsh or root:x:0:0:root:/root:/usr/ bin/zsh 
+change them to root:x:0:0:root:/root:/usr/bin/bash
+Press ctrl+o, then enter, then ctrl+x, and reopen the terminal
+Congratulations, your problem has been solved
+If you encounter any problem, contact me on Instagram https://www.instagram.com/adam__baybay/@Adambay2023
